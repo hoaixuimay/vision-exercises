@@ -13,28 +13,27 @@
  
  Example 1:
  Input:
-3
-1 2
-2 3
-1 3
+ 3
+ 1 2
+ 2 3
+ 1 3
 
+ Output:
+ 3
 
-Output:
-3
+ Example 2:
+ Input:
+ 8
+ 1 2
+ 2 3
+ 1 3
+ 3 7
+ 1 7
+ 4 5
+ 5 6
+ 6 4
 
-Example 2:
-Input:
-8
-1 2
-2 3
-1 3
-3 7
-1 7
-4 5
-5 6
-6 4
-
-Output:
-4
+ Output:
+ 4
  
  
