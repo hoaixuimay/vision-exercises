@@ -6,7 +6,7 @@
  ```
  C : tổng số  thành phố
  R : tổng số  con đường
- X Y: đường hai chiều từ X tới Y
+ X Y: đường hai chiều từ thành phố X tới thành phố  Y
  
  Điều kiện
  0 < N <= 49995000
