@@ -17,7 +17,8 @@
  ```
  K : số thành phố  (nơi đáng sống nhất) người đến từ Babylon có thể mua.
  ```
- Example 1:
+ Ví dụ 1:
+
  Input:
  ```
  3
@@ -30,7 +31,8 @@
  3
 ```
 
- Example 2:
+ Ví dụ 2:
+
  Input:
  ```
  7
