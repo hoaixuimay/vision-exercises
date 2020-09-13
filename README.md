@@ -9,7 +9,7 @@
  X Y: đường hai chiều từ thành phố X tới thành phố  Y
  
  Điều kiện
- 0 < N <= 49995000
+ 0 < R <= 49995000
  0 < X, Y <= 10000, X != Y
  ```
  Output:
