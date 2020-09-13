@@ -21,14 +21,15 @@
  Input:
  ```
  3
+ 2
  1 2
  2 3
- 1 3
 ```
  Output:
  ```
  3
 ```
+
  Example 2:
  Input:
  ```
@@ -48,4 +49,6 @@
  4
  ```
  
- 
+ Giải thích:
+ Ví dụ 1: Cho 3 thành phố  đều có đường kết nối giữa các thành phố  nên kết quả là 3
+ Ví dụ 2: Cho 7 thành phố, và 8 đường kết nối, đường 4, 5, 6 có thể đi qua lại, đường 1,2,3,7 c
