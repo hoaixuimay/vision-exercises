@@ -9,13 +9,14 @@
  X Y: đường hai chiều từ thành phố X tới thành phố  Y
  
  Điều kiện
- 0 < C < 10000
+ 0 < C <= 10000
  0 < R <= 49995000
  0 < X, Y <= 10000, X != Y
  ```
  ## Output:
  ```
- K : số thành phố  (nơi đáng sống nhất) người đến từ Babylon có thể mua.
+ M : số thành phố  (nơi đáng sống nhất) người đến từ Babylon có thể mua.
+ 0 < M <= 10000
  ```
  ###### Ví dụ 1:
 
