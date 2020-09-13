@@ -1,6 +1,6 @@
 # vision-exercises
 
- Một người giàu có đến từ thành Babylon muốn sở hữu một nơi đáng sống nhất. Anh ta muốn một nơi đáng sống nhất phải thuận tiện đi lại từ thành phố này qua thành phố khác và không bị hạn chế di chuyển. Bạn trong vai người tư vấn, hãy đưa cho anh ta một nơi rộng nhất, tức là nơi có nhiều thành phố nhất, và có thể di chuyển bất cứ đâu trong thành phố. Hãy đề nghị anh ta số thành phố  mà anh ta có thể sở hữu.
+ Một người giàu có đến từ thành Babylon muốn sở hữu một nơi đáng sống nhất. Anh ta muốn một nơi đáng sống nhất phải thuận tiện đi lại từ thành phố này qua thành phố khác và không bị hạn chế di chuyển. Bạn trong vai người tư vấn, hãy nghị cho anh ta một nơi rộng nhất, tức là nơi có nhiều thành phố nhất, và có thể di chuyển bất cứ đâu trong thành phố. Hãy đề nghị anh ta số thành phố  mà anh ta có thể sở hữu.
  
  ## Input:
  ```
