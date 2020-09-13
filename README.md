@@ -13,9 +13,9 @@
  0 < X, Y <= 10000, X != Y
  ```
  Output:
- ``
+ ```
  K : số thành phố  (nơi đáng sống nhất) người đến từ Babylon có thể mua.
- ``
+ ```
  Example 1:
  Input:
  ```
