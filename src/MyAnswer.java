@@ -1,19 +1,16 @@
-package org.qpro;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.HashSet;
 import java.util.Set;
 
 /*
 Lan's solution
  */
-public class MyAnswer {
-	public static void main(String[] args) throws Exception{
+public class MyAnswer implements Answer {
+
+	public void exec(String[] args) throws Exception{
 		Set<String> results = new HashSet<>();
-		FileInputStream inputStream = new FileInputStream(new File("tc4_input.txt"));
+		FileInputStream inputStream = new FileInputStream(new File(args[0]));
 		BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
 		try {
 			reader.readLine();
@@ -48,5 +45,9 @@ public class MyAnswer {
 			
 		}
 		System.out.println("Final result: " + results.size());
+
+        FileOutputStream file = new FileOutputStream(args[1]);
+        file.write(String.valueOf(results.size()).getBytes());
+        file.close();
 	}
 }
