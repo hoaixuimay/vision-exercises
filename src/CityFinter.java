@@ -39,7 +39,7 @@ public class CityFinter implements Answer{
 		}
 		return nOfCrowdedCity;
 	}
-	
+
 	private int findCrowded (List<Set<Integer>> cityGroups) {
 		int maxLengh = cityGroups.get(0).size();
 		for (int i = 1; i < cityGroups.size(); i++) {
@@ -50,26 +50,44 @@ public class CityFinter implements Answer{
 		System.out.println("Max lengh:= " + maxLengh);
 		return maxLengh;
 	}
-	
-	private static void group(String str, List<Set<Integer>> cityGroups) {
+
+	private void group(String str, List<Set<Integer>> cityGroups) {
 		String[] strs = str.split(" ");
 		int first = Integer.parseInt(strs[0]);
 		int second = Integer.parseInt(strs[1]);
-		boolean noBelongGroup = true;
+		int size = cityGroups.size();
+
+		int firstNumMatchedAt = size;
+		int secondNumMatchedAt = size;
 		for (int i = 0; i < cityGroups.size(); i++) {
-			if (cityGroups.get(i).contains(first)
-					|| cityGroups.get(i).contains(second)) {
-				cityGroups.get(i).add(first);
-				cityGroups.get(i).add(second);
-				noBelongGroup = false;
+			if (cityGroups.get(i).contains(first)) {
+				firstNumMatchedAt = i;
+			}
+			if (cityGroups.get(i).contains(second)) {
+				secondNumMatchedAt = i;
+			}
+			if (firstNumMatchedAt != size && firstNumMatchedAt != size) {
 				break;
 			}
 		}
-		if (noBelongGroup) {
+
+		if (cityGroups.size() == 0 || (firstNumMatchedAt == size && secondNumMatchedAt == size)) {
 			Set<Integer> cityGroup = new HashSet<Integer>();
 			cityGroup.add(first);
 			cityGroup.add(second);
 			cityGroups.add(cityGroup);
+			return;
+		}
+		if (firstNumMatchedAt == secondNumMatchedAt) {
+			return;
+		}
+		if (firstNumMatchedAt < size && secondNumMatchedAt == size) {
+			cityGroups.get(firstNumMatchedAt).add(second);
+		} else if (firstNumMatchedAt == size && secondNumMatchedAt < size) {
+			cityGroups.get(secondNumMatchedAt).add(first);
+		} else {
+			cityGroups.get(firstNumMatchedAt).addAll(cityGroups.get(secondNumMatchedAt));
+			cityGroups.remove(secondNumMatchedAt);
 		}
 	}
 

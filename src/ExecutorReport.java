@@ -10,13 +10,18 @@ public class ExecutorReport {
         AssertReport.assertReport(myAnswer);
 
         // Ngan solution
-//        CityFinter cityFinter = new CityFinter();
-//        exec.exec(cityFinter);
-//        AssertReport.assertReport(cityFinter);
+        CityFinter cityFinter = new CityFinter();
+        exec.exec(cityFinter);
+        AssertReport.assertReport(cityFinter);
+
+        // Duc solution
+        MyTest myTest = new MyTest();
+        exec.exec(myTest);
+        AssertReport.assertReport(myTest);
 
         // Hoai
-//        WidestPlace widestPlace = new WidestPlace();
-//        exec.exec(widestPlace);
-//        AssertReport.assertReport(widestPlace);
+        WidestPlace widestPlace = new WidestPlace();
+        exec.exec(widestPlace);
+        AssertReport.assertReport(widestPlace);
     }
 }
