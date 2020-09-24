@@ -9,7 +9,8 @@ public class Executor {
 				"tc3",
 				"tc4",
 				"tc5",
-				"tc6"
+				"tc6",
+				"tc7"
 		};
 		String className = ans.getClass().getCanonicalName();
 		String inputSuffix = "_input.txt";

@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Thanh's solution
+ */
 public class AnswerThanh implements Answer {
 	public static String file = "D:\\zzz_work\\cityf\\vision-exercises\\tc4_input.txt";
 
