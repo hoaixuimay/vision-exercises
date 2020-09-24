@@ -23,5 +23,10 @@ public class ExecutorReport {
         WidestPlace widestPlace = new WidestPlace();
         exec.exec(widestPlace);
         AssertReport.assertReport(widestPlace);
+
+        // Thanh
+        AnswerThanh answerThanh = new AnswerThanh();
+        exec.exec(answerThanh);
+        AssertReport.assertReport(answerThanh);
     }
 }
