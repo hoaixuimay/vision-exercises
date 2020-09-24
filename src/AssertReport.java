@@ -9,7 +9,8 @@ public class AssertReport {
                 "tc3",
                 "tc4",
                 "tc5",
-                "tc6"
+                "tc6",
+                "tc7"
         };
         String className = answer.getClass().getCanonicalName();
         String outputSuffix = "_output.txt";
