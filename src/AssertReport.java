@@ -58,7 +58,7 @@ public class AssertReport {
 
             FileOutputStream report = new FileOutputStream(prefix + reportSuffix, i!=0?true:false);
             report.write(String.valueOf(timeResult).getBytes());
-            report.write("\n".getBytes());
+            report.write(",".getBytes());
             report.close();
         }
     }

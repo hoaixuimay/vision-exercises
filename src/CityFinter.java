@@ -66,7 +66,7 @@ public class CityFinter implements Answer{
 			if (cityGroups.get(i).contains(second)) {
 				secondNumMatchedAt = i;
 			}
-			if (firstNumMatchedAt != size && firstNumMatchedAt != size) {
+			if (firstNumMatchedAt != size && secondNumMatchedAt != size) {
 				break;
 			}
 		}
