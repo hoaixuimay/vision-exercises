@@ -32,6 +32,10 @@ public class MyAnswer implements Answer {
 			reader.close();
 			inputStream.close();
 		}
+
+		FileOutputStream file = new FileOutputStream(args[1]);
+		file.write(String.valueOf(max).getBytes());
+		file.close();
 //		long end = System.nanoTime();
 //		System.out.println("Final result: " + max + " in: " + (end-start));
 	}

@@ -1,0 +1,74 @@
+Highcharts.chart('container', {
+
+    title: {
+        text: 'Suggest wildest place'
+    },
+
+    subtitle: {
+        text: ''
+    },
+
+    yAxis: {
+        title: {
+            text: 'Seconds (s)'
+        }
+    },
+
+    xAxis: {
+        accessibility: {
+            rangeDescription: 'Testcase'
+        }
+    },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 1
+        }
+    },
+
+    series: [{
+        name: 'Thanh_AnswerThanh',
+        data: [0.0435263,4.004E-4,0.9060443,1.77657,0.3070311,2.5001306,2.4826475]
+    }, {
+        name: 'Ngan_CityFinter',
+        data: [7.125E-4,6.324E-4,0.5611409,1.2973893,0.2849957,2.0219736,2.0336042]
+    }, {
+        name: 'Lan_MyAnswer',
+        data: [0.0012338,0.004233,0.8956908,1.5862126,0.4020924,2.5286781,2.05681]
+    }, {
+        name: 'Duc_MyTest',
+        data: [0.0039167,5.474E-4,0.4619316,1.1484676,0.0033569,1.7620262,1.7534704]
+    }, {
+        name: 'Duy_ProblemSolver765',
+        data: [0.0024799,5.325E-4,0.7410603,2.1395495,0.3372639,10.2763257,7.2533675]
+    },
+    {
+        name: 'Hoai_WildestPlace',
+        data: [0.0022966,7.12E-4,1.8065437,8.0808194,0.0067721,8.3545374,7.9105646]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});

@@ -6,7 +6,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * Connect latest to 0
+ * Connect latest to 1
+ * connect more 500 connections
  */
 public class DataGenerator5 {
 
